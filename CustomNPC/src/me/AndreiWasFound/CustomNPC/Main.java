@@ -26,8 +26,14 @@ public class Main extends JavaPlugin implements Listener {
 				return true;
 			}
 			Player player = (Player) sender;
-			NPC.createNPC(player);
+			if (args.length == 0) {
+				NPC.createNPC(player, player.getName());
+				player.sendMessage(ChatColor.RED + "NPC has been created");
+				return true;
+			}
+			NPC.createNPC(player, args[0]);
 			player.sendMessage(ChatColor.RED + "NPC has been created");
+			return true;
 		}
 		return false;
 	}
