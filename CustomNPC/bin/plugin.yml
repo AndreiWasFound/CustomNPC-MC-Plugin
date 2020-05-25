@@ -1,6 +1,6 @@
 main: me.AndreiWasFound.CustomNPC.Main
 name: CustomNPC
-version: 1.0
+version: 2.0
 author: AndreiWasFound
 
 commands:
